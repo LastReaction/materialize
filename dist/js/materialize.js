@@ -2809,13 +2809,13 @@ if (Vel) {
 ;(function ($) {
   $.fn.tooltip = function (options) {
     var timeout = null,
-        margin = 5;
 
     // Defaults
     var defaults = {
       delay: 350,
       tooltip: '',
       position: 'bottom',
+      margin: 5,
       html: false
     };
 
@@ -2900,6 +2900,7 @@ if (Vel) {
             var scaleXFactor = 8;
             var scaleYFactor = 8;
             var scaleFactor = 0;
+            var margin = options.margin;
             var targetTop, targetLeft, newCoordinates;
 
             if (tooltipPosition === "top") {
