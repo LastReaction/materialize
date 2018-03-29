@@ -2808,7 +2808,7 @@ if (Vel) {
 })(jQuery);
 ;(function ($) {
   $.fn.tooltip = function (options) {
-    var timeout = null,
+    var timeout = null;
 
     // Defaults
     var defaults = {
